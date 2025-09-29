@@ -346,10 +346,44 @@
 
             <div class="contatoCampo contatoCampo-erro">
               <label>Email: </label>
-              <input type="email" class="contatoCampo-validoErro" value="Eduardo Roskoski" required>
-              <s
+              <input type="email" class="contatoCampo-validoErro" required>
+              <span class="contatoCampo-msg contatoCampo-msg-erro">
+                Você quis dizer <a href="#"> gmail.com</a>
+              </span>
             </div>
 
+             <div class="contatoCampo contatoCampo-erro">
+              <label>Telefone: </label>
+              <input type="text" class="contatoCampo-validoErro" placeholder="(11) 5571-2751">
+              <span class="contatoCampo-msg contatoCampo-msg-erro"> Faltou o DDD </span>
+            </div>
+
+
+           <div class="contatoCampo"> 
+           <label>CEP</label>
+           <input type="text" maxlength="8" placeholder="Exemplo: 04101-000" required>
+           </div>
+
+           <div class="contatoCampo">7
+             <label>Endereço</label>
+             <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Rua Vergueiro">
+           </div>
+
+            <div class="contatoCampo">7
+             <label>Bairro</label>
+             <input type="text" class="contatoCampo-campoDesabilitado" disabled value="Vila Mariano">
+           </div>
+
+           <div class="contatoCampo">7
+             <label>Cidade</label>
+             <input type="text" class="contatoCampo-campoDesabilitado" disabled value="São Paulo">
+           </div>
+
+             <div class="contatoCampo">7
+             <label>Estado</label>
+             <input type="text" class="contatoCampo-campoDesabilitado" disabled value="SP">
+           </div>
+           
 
           </form>
         </div>
