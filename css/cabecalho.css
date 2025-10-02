@@ -1,0 +1,42 @@
+
+.cabecalho {
+    position: absolute;
+    top: -2.5em;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    width: 100%;
+    border-bottom: 1px solid #103d4a;
+    padding-bottom: .5em;
+}
+
+
+.cabecalho-logo {
+    margin-bottom: .2em;
+}
+
+
+.cabecalho-logo-img {
+    margin: 0 auto;
+    display: block;
+    transition: filter .3s;
+}
+
+
+.cabecalho-logo-img:hover,
+.cabecalho-logo-img:focus {
+    filter: brightness(1.2);
+}
+
+
+.cabecalho-nav {
+    text-align: center;
+}
+
+
+.cabecalho-nav-item {
+    display: inline-block;
+    line-height: 1;
+    margin: 0.5;
+    font-size: .95em;
+}
