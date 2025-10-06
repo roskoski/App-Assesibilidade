@@ -40,3 +40,31 @@
     margin: 0.5;
     font-size: .95em;
 }
+
+.cabecalho-nav-item-a{
+    text-decoration: nome;
+    color: #fff;
+    font-family: "Open Sans", serif;
+}
+
+.cabecalho-nav-item-a:hover,
+.cabecalho-nav-item-a:focus{
+    text-decoration: underline;
+}
+
+@media (min-windth: 830) {
+
+    .cabecalho{
+        border-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .cabecalho-logo{
+        float: left;
+    }
+    .cabecalho-nav {
+        float: right;
+        margin-top: 1em;
+    }
+}
+
