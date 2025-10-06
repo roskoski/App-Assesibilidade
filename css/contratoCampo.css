@@ -1,0 +1,20 @@
+
+.contatoCampo {
+    margin: .8em auto;
+    max-width: 600px;
+    position: relative;
+}
+
+.contatoCampo-label::before {
+    content: '';
+    vertical-align: niddle;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #fff;
+    transform: translate(-7px, -3px);
+    border: 1px solid #7d7d7d;
+    color: transparent;
+    line-height: 1;
+    transition: .2s ease-in;
+}
