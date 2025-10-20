@@ -5,16 +5,46 @@
     position: relative;
 }
 
-.contatoCampo-label::before {
+.contatoCampo-label:before {
     content: '';
-    vertical-align: niddle;
+    vertical-align: middle;
+    display: inline-block;
     width: 20px;
     height: 20px;
     text-align: center;
     background-color: #fff;
     transform: translate(-7px, -3px);
-    border: 1px solid #7d7d7d;
+    border: 1px solid #7D7D7D;
     color: transparent;
     line-height: 1;
     transition: .2s ease-in;
+}
+
+.contatoCampo-checkbox:checked + .contatoCampo-label:before {
+    content: 'x';
+    color: #fff;
+    background-image: radial-gradient(cicle, #2da4e7, #2f80ed);
+}
+
+.contatoCampo-checkbox {
+    /* display: none*/
+    /* visibility: hidden*/
+    left: -9999px;
+    position: absolute;
+    opacity: 0;
+}
+
+.contatoCampo-icone {
+    position: absolute;
+    left: -2;
+    top: 2.5em;
+    width: 1.5em;
+}
+
+.contatoCampo label,
+.contatoCampo input: not([type='checkbox']),
+.contatoCampo textarea {
+    display : block;
+    width: 100%;
+    text-aling:left;
 }
