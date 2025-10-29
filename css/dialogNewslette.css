@@ -85,3 +85,59 @@
     transition: .2s ease-in;
 }
 
+.dialofNewsletter-btn:hover,
+.dialofNewsletter-btn:focus {
+    background-color: #eb5757;
+    cursor: pointer;
+    background-image: url(../img/email-hover.png);
+}
+
+.dialofNewsletter-fechar {
+    position: absolute;
+    background-color: transparent;
+    transform: translate(50%, 50%) scale(1.4);
+    top: -5pc;
+    right: 25px;
+    width: 32px;
+    height: 32px;
+    border: 0;
+    border: 1px solid;
+    overflow: hidden;
+    color: transparent;
+    font-size: 0;
+}
+
+.dialofNewsletter-fechar::before {
+    content: 'x';
+    color: #6666;
+    width: 32px;
+    height: 32px;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    font-size: 20px;
+    font-size: bold;
+}
+
+.dialofNewsletter-fechar:hover:before,
+.dialofNewsletter-fechar::before{
+    color: #ce3434;
+    cursor: pointer;
+}
+
+@media (min-width: 830px) {
+    .dialofNewsletter-body {
+        width: 533px;
+        flex-wrap: nowrap;
+    }
+
+.dialofNewsletter-campo {
+    flex-basis: 80%;
+}
+.dialofNewsletter-btn {
+     flex-basis: 20%;
+     height: ;
+}
+}
